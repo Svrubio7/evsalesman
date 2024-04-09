@@ -5,7 +5,7 @@ st.set_page_config(page_title="Your EV Online", page_icon=":electric_plug:", lay
 
 def main():
     st.title("Welcome to Your EV Online!")
-    st.image("C:/Users/svrub/Documents/IE STUFF/2nd year/2nd semester/PERSONALITY FOR AI/Evsalesman/evsalesman/elements/yeologo.jpg", width=300)
+    st.image("elements/yeologo.jpg", width=300)
 
     st.markdown("""
     ## Explore the Future of Driving
