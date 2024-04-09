@@ -6,8 +6,6 @@ st.set_page_config(page_title="Your EV Online", page_icon=":electric_plug:", lay
 def main():
     st.title("Welcome to Your EV Online!")
 
-    st.image("elements/yeologo.jpg", width=300)
-
     # Container for company logo and introduction
     with st.container():
         left_col, right_col = st.columns((1, 2))
