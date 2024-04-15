@@ -53,7 +53,7 @@ def main():
     st.markdown("---")  # I IMPLEMENTED THE CHATBOT HERE
 
     with st.container():
-        st.markdown("<h2 style='text-align: center; color: black;'>Chat with our bot</h2>", unsafe_allow_html=True)
+        st.header("Chat with our bot")
         with st.form(key='chat_bot'):
             user_message = st.text_input("Question")
             submit_button = st.form_submit_button(label='Submit')
