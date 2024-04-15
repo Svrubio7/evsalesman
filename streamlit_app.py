@@ -1,12 +1,14 @@
 import streamlit as st
-from openai import OpenAI
+import openai
+import os
 
 # Use the "light" theme as a base and customize from there
 st.set_page_config(page_title="Your EV Online", page_icon=":electric_plug:", layout="wide")
 
 
 """OPENAI INTEGRATION"""
-client = OpenAI()
+# Setting the API key
+openai.api_key = os.environ['OPENAI_API_KEY']
 
 system_message = "You are an Electric Vehicle salesman. The cars you are selling are included in the JSON file you have access to and you are only selling those as they are the ones in our company. Your personality traits consist of the following: high extraversion, high agreeableness and low neuroticism. \
 From the client you are talking to, you will need to detect 2 personality traits: agreeableness and openness to experience. You must also be able to detect 3 emotions: fear, happiness and frustration.\
