@@ -23,9 +23,6 @@ with col3:
 #                    initial_sidebar_state="auto", menu_items=None)
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
-
-
-
 if "messages" not in st.session_state:
     st.session_state.messages = [{"role": "assistant", "content": "How can I help you today?"}]
 
