@@ -34,7 +34,7 @@ def load_data():
         reader = SimpleDirectoryReader(input_dir="./data", recursive=True)
         docs = reader.load_data()
         service_context = ServiceContext.from_defaults(
-            llm=OpenAI(model="gpt-3.5-turbo-1106", temperature=1, max_tokens=250,
+            llm=OpenAI(model="gpt-4.5-turbo", temperature=1, max_tokens=300,
                        system_prompt=
                        """
                        You are an Electric Vehicle salesman. The cars you are selling are included in the JSON file you 
