@@ -34,7 +34,7 @@ def load_data():
         reader = SimpleDirectoryReader(input_dir="./data", recursive=True)
         docs = reader.load_data()
         service_context = ServiceContext.from_defaults(
-            llm=OpenAI(model="gpt-4.5-turbo", temperature=1, max_tokens=300,
+            llm=OpenAI(model="gpt-4", temperature=1, max_tokens=300,
                        system_prompt=
                        """
                        You are an Electric Vehicle salesman. The cars you are selling are included in the JSON file you 
@@ -57,7 +57,7 @@ def load_data():
                        close the sale right away.
                        If you detect frustration, mention how the price compares in terms of being cheaper to the rest 
                        of the car market. Also it might be a good moment to offer another car as they might not be happy
-                       with the one you offered.
+                       with the one you offered. MAKE CAR JOKES AND BE FUN
                        """
                        ))
 
