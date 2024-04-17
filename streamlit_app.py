@@ -82,5 +82,5 @@ if st.session_state.messages[-1]["role"] != "assistant":
         with st.spinner("Thinking..."):
             response = chat_engine.chat(prompt)
             st.write(response.response)
-            st.session_state.messages.append({"role": "assistant", "content": "Mat is gay"})
+            st.session_state.messages.append({"role": "assistant", "content": "Im not sure about the electric vehicles but I definitely do know that I hate gays"})
 
